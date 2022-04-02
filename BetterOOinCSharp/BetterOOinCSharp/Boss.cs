@@ -11,49 +11,43 @@ namespace BetterOOinCSharp
      */
     public class Boss
     {
-        List<Employee> staff;
+        private List<Employee> staff;
 
         public Boss()
         {
             staff = Agency.Generate();
         }
 
-        /// <summary>
-        /// Displays the list of employees on the console.
-        /// </summary>
-        public void Display()
+        public void display()
         {
-            staff.ForEach(Console.WriteLine);
+            foreach(Employee e in staff)
+            {
+                Console.WriteLine(e);
+            }
         }
 
-        /// <summary>
-        /// Returns the Employee with the given ID, or null if no such employee exists.
-        /// </summary>
         public Employee Use(int id)
         {
-            foreach (Employee e in staff)
+            foreach(Employee e in staff)
             {
-                if (e.ID == id)
+                if(e.ID == id)
                 {
                     return e;
                 }
             }
+
             return null;
-            //FYI, if you have an interest in lambda expressions the above could be achieved with:
-            //return staff.First(e => e.ID == id);
         }
 
-        /// <summary>
-        /// Removes the Employee with the given ID from the staff list; if a
-        /// matching Employee was found it is returned, otherwise returns null.
-        /// </summary>
         public Employee Fire(int id)
         {
             Employee target = Use(id);
-            if (target != null)
+
+            if(target != null)
             {
                 staff.Remove(target);
             }
+
             return target;
         }
     }

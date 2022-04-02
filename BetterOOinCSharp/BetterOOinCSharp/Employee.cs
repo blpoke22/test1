@@ -16,7 +16,7 @@ namespace BetterOOinCSharp
         //These properties have auto-generated getters (accessors <- fancy name) and
         //setters (mutators <- again fancier name); hence, are entirely public
         public string Name { get; set; }
-        public int ID { get; set; }
+        public int ID { get;  set; }
         public Gender Gender { get; set; }
 
         public override string ToString()
