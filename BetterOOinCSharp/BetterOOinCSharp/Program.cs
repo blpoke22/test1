@@ -32,7 +32,6 @@ namespace BetterOOinCSharp
             doSomething();
             Console.WriteLine("Dealing with {0}", manage(1));
             Console.WriteLine("After dealing with that employee");
-            Console.WriteLine("This is an addition via GITHub");
             doSomething();
 
         }
