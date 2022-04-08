@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace BetterOOinCSharp
 {
-
     /*
      * Task 2.1.2
      */
