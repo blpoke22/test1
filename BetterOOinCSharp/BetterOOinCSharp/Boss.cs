@@ -15,7 +15,7 @@ namespace BetterOOinCSharp
 
         public Boss()
         {
-            staff = Agency.Generate();
+            staff = Agency.loadAll();
         }
 
         public void display()

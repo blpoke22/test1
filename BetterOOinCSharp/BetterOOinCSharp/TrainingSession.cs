@@ -13,9 +13,11 @@ namespace BetterOOinCSharp
         public DateTime certified;
         public string mode;
 
+        /**
         public override string ToString()
         {
-            return title + '\t' + year '\t' + certified + '\t' + mode;
+            return title + "\t" + year "\t" + mode;
         }
+        **/
     }
 }
